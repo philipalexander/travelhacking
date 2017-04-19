@@ -1,0 +1,42 @@
+// Variables
+$heading-font: "HelveticaNeue-CondensedBold", "Helvetica Neue";;
+$body-font: "Helvetica Neue", helvetica, sans-serif;
+
+$largest: 56px;
+
+.title {
+    font-family: $heading-font;
+    line-height: 68px;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.subtitle {
+    line-height: 34px;
+    margin-bottom: 34px;
+    font-size: 28px;
+    font-weight: 200;
+}
+
+.note {
+    font-size: 24px;
+    font-weight: 100;
+    letter-spacing: 2px;
+}
+
+.secondary-title {
+    font-size: 44px;
+}
+
+.dramatic {
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+.dollar-signs p {
+    font-size: 40px;
+    text-align: center;
+}
+.subtext {
+    font-size: 14px;
+}
