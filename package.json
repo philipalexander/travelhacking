@@ -1,0 +1,20 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "learn travel hacking",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "travel",
+    "credit",
+    "cards",
+    "travel",
+    "hacking",
+    "cheap",
+    "travel"
+  ],
+  "author": "philip alexander",
+  "license": "ISC"
+}
