@@ -1,7 +1,15 @@
+p {
+  margin-bottom: 30px; }
+
+h3 {
+  font-size: 24px;
+  line-height: 1.2em;
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue"; }
+
 .title {
   font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
   line-height: 68px;
-  font-size: 56px;
+  font-size: 44px;
   text-transform: uppercase;
   color: #fff; }
 
@@ -17,7 +25,9 @@
   letter-spacing: 2px; }
 
 .secondary-title {
-  font-size: 44px; }
+  font-size: 44px;
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue";
+  margin: 0 0 40px 0; }
 
 .dramatic {
   text-transform: uppercase;
@@ -200,20 +210,16 @@ button.ck_subscribe_button.btn.red:active {
 
 body {
   color: #555;
-  font-size: 16px;
-  line-height: 1.2em;
-  font-family: "Helvetica Neue", helvetica, sans-serif; }
+  font-size: 20px;
+  line-height: 1.8em;
+  font-family: "Helvetica Neue", "helvetica", sans-serif;
+  font-weight: 200; }
 
 ul {
   list-style-type: none;
-  padding: 0;
-  margin-bottom: 20px; }
+  padding: 0; }
 
 ul,
-ol {
-  line-height: 34px;
-  font-size: 18px; }
-
 img {
   max-width: 100%; }
 
@@ -247,6 +253,53 @@ img {
   color: #05A997;
   border-top: 2px solid #05A997;
   text-decoration: none; }
+
+.colored-boxes {
+  overflow: hidden; }
+  .colored-boxes .teal {
+    background: #00B7A1; }
+  .colored-boxes .yellow {
+    background: #F0B02A; }
+  .colored-boxes .orange {
+    background: #F26E3D; }
+  .colored-boxes .blue {
+    background: #4094EE; }
+  .colored-boxes li {
+    width: 47.5%;
+    margin: 2.5% 5% 2.5% 0;
+    box-sizing: border-box;
+    padding: 3%;
+    background: #000;
+    float: left;
+    color: #fff;
+    text-align: center; }
+    .colored-boxes li:nth-of-type(2n) {
+      margin-right: 0; }
+    .colored-boxes li h3 {
+      margin-top: 0; }
+    .colored-boxes li p {
+      line-height: 1.3em; }
+
+.first-class-banner {
+  width: 100%;
+  height: 379px;
+  background-image: url("images/first-class.png");
+  background-position: center;
+  background-size: cover; }
+
+.overflow-container {
+  margin-left: -100px;
+  margin-right: -100px;
+  margin-bottom: 30px; }
+
+.footer-cta {
+  background: #549297;
+  color: #fff; }
+  .footer-cta p {
+    margin-top: 50px;
+    color: #fff;
+    opacity: .5;
+    font-size: 16px; }
 
 .hero,
 .intro,

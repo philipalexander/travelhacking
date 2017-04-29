@@ -1,13 +1,23 @@
 // Variables
-$heading-font: "HelveticaNeue-CondensedBold", "Helvetica Neue";;
+$heading-font: "HelveticaNeue-CondensedBold", "Helvetica Neue";
 $body-font: "Helvetica Neue", helvetica, sans-serif;
 
 $largest: 56px;
 
+p {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 1.2em;
+    font-family: $heading-font;
+}
+
 .title {
     font-family: $heading-font;
     line-height: 68px;
-    font-size: 56px;
+    font-size: 44px;
     text-transform: uppercase;
     color: #fff;
 }
@@ -27,6 +37,8 @@ $largest: 56px;
 
 .secondary-title {
     font-size: 44px;
+    font-family: $heading-font;
+    margin: 0 0 40px 0;
 }
 
 .dramatic {
