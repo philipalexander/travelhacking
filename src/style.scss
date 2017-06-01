@@ -24,13 +24,13 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-ul,
-// ol {
-//     line-height: 34px;
-//     font-size: 18px;
-// }
+
 img {
     max-width: 100%;
+}
+
+.clear {
+    clear: both;
 }
 
 .container {

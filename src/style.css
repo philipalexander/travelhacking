@@ -219,9 +219,11 @@ ul {
   list-style-type: none;
   padding: 0; }
 
-ul,
 img {
   max-width: 100%; }
+
+.clear {
+  clear: both; }
 
 .container {
   max-width: 800px; }
