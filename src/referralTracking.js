@@ -1,25 +1,28 @@
-(function() {
-    console.log("checkmate");
-
-    createCookie('referrer','philip',7);
-    
-    var x = readCookie('referrer')
-    if (x) {
-        console.log("cookie set already");
+function checkUrl() {
+    var url = window.location.href;
+    // If referrer equals the referrer id given to the affiliate
+    if (_get("referrer", url) == 'philip') {
+        return true;
+    } else {
+        return false;
     }
+}
 
-})();
-
+// @param parameter {String} Key of the get parameter to retrieve
+// @param URL {String} The URL to search for the get parameter
+function _get(parameter , URL) {
+   var reg = new RegExp( '[?&]' + parameter + '=([^&#]*)', 'i' );
+   var string = reg.exec(URL);
+   return string ? string[1] : undefined;
+};
 
 function createCookie(name,value,days) {
-    console.log("in createCookie");
     var expires = "";
     if (days) {
         var date = new Date();
         date.setTime(date.getTime() + (days*24*60*60*1000));
         expires = "; expires=" + date.toUTCString();
     }
-    console.log(name + "=" + value + expires + "; path=/");
     document.cookie = name + "=" + value + expires + "; path=/";
 }
 
@@ -37,3 +40,24 @@ function readCookie(name) {
 function eraseCookie(name) {
     createCookie(name,"",-1);
 }
+
+function referrerSignup() {
+    var x = readCookie('referrer');
+    if (x) {
+        // Send request to API
+        //
+        //
+        console.log("referrer", x);
+        console.log("customer email");
+    }
+}
+
+// On load, run some shit
+// test data: ?referrer=philip
+(function() {
+    if (checkUrl()) {
+        createCookie('referrer','philip',7);
+        console.log('cookie set...hopefully')
+    }
+    // referrerSignup();
+})();
