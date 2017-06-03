@@ -39,7 +39,7 @@ img {
 
 .nav .container {
     max-width: 1000px;
-    padding: 20px 0;
+    padding: 20px 15px;
 }
 
 .nav .logo {
@@ -110,6 +110,10 @@ img {
     margin-left: -100px;
     margin-right: -100px;
     margin-bottom: 30px;
+    @media (max-width: 920px){
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 
 .footer-cta {
@@ -150,11 +154,13 @@ img {
 }
 .hero {
     background: url('images/hero-bg.png');
-    /*background-size: cover;*/
+    background-size: cover;
     background-position: center;
-    height: 700px;
     color: #fff;
     padding: 100px 0;
+    @media (max-width: 920px){
+        padding: 50px 0;
+    }
 }
 .intro,
 .game-it {
