@@ -43,12 +43,19 @@ function eraseCookie(name) {
 
 function referrerSignup() {
     var x = readCookie('referrer');
+    var email = "myemail@test.com";
+    console.log("referrer", x);
+    console.log("refferred email", email);
+    console.log("api call", "http://localhost:8000/referral/?cust=" + x + "&email=" + email);
     if (x) {
-        // Send request to API
-        //
-        //
-        console.log("referrer", x);
-        console.log("customer email");
+        function sendReferrer() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.open("GET", "http://localhost:8000/referral/?cust=" + x + "&email=" + email, false);
+            xhttp.setRequestHeader("Content-type", "application/json");
+            xhttp.send();
+            var response = JSON.parse(xhttp.responseText);
+        }
+        sendReferrer();
     }
 }
 
@@ -59,5 +66,5 @@ function referrerSignup() {
         createCookie('referrer','philip',7);
         console.log('cookie set...hopefully')
     }
-    // referrerSignup();
+    referrerSignup();
 })();
